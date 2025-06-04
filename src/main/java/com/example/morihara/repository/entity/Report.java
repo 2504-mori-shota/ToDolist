@@ -21,6 +21,12 @@ public class Report {
     @NotBlank
     private String content;
 
+    @Column
+    private int status;
+
+    @Column(name = "updated_at", nullable = false, insertable = false)
+    private LocalDateTime limit_date;
+
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
     @PrePersist

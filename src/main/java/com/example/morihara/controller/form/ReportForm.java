@@ -14,6 +14,9 @@ public class ReportForm {
 
     @NotBlank(message = "投稿内容を入力してください")
     private String content;
+    private int status;
+    private LocalDateTime limit_date;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }
